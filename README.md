@@ -9,8 +9,10 @@ a brief description in a few sentences of your vignette topic, example data, and
 ## Repository Contents
 an explanation of the directory structure of the repository
 
-## Supplementary References
-2 or more references to learn more about your topic.
+## References
+The original ESPCN paper: https://arxiv.org/pdf/1609.05158.pdf
+
+A Pytorch implementation of the paper: https://github.com/pytorch/examples/tree/main/super_resolution
 
 ## Re-evaluation
 instructions on use and instructions on contributing to the repository
