@@ -12,7 +12,9 @@ an explanation of the directory structure of the repository
 ## References
 The original ESPCN paper: https://arxiv.org/pdf/1609.05158.pdf
 
-A Pytorch implementation of the paper: https://github.com/pytorch/examples/tree/main/super_resolution
+Pytorch implementations of the paper:
+ - https://github.com/pytorch/examples/tree/main/super_resolution
+ - https://github.com/Lornatang/ESPCN-PyTorch
 
 ## Re-evaluation
 instructions on use and instructions on contributing to the repository
