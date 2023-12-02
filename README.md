@@ -7,7 +7,7 @@ Vignette on constructing an Efficient Sub-Pixel Convolutional Neural Network in 
 a brief description in a few sentences of your vignette topic, example data, and outcomes.
 
 ## Repository Contents
-* Image Re-sizing 
+**Image Re-sizing** 
 In order to succesfully start our project, we first 
 
 ## References
