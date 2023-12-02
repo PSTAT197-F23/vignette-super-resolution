@@ -7,10 +7,12 @@ Vignette on constructing an Efficient Sub-Pixel Convolutional Neural Network in 
 a brief description in a few sentences of your vignette topic, example data, and outcomes.
 
 ## Repository Contents
-an explanation of the directory structure of the repository
+* Image Re-sizing 
+In order to succesfully start our project, we first 
 
 ## References
 The original ESPCN paper: https://arxiv.org/pdf/1609.05158.pdf
+Another amazing ESPCN paper: https://arxiv.org/pdf/1904.07523.pdf
 
 Pytorch implementations of the paper:
  - https://github.com/pytorch/examples/tree/main/super_resolution
