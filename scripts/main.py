@@ -112,15 +112,18 @@ for i in range(epoch):
     ax[1, i].imshow(ref_fit)
     ax[2, i].imshow(ref_tgt)
 
-figure.show()
+figure.savefig('../image/reference.jpg')
 
 
 # plot loss
 plt.yscale("log")
 plt.plot(loss_history)
 plt.plot(test_loss_history)
-plt.show()
+plt.savefig('../image/loss.jpg')
 
 
 # save model
 torch.save(model.state_dict(), '../model/model.pt')
+
+
+
