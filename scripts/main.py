@@ -113,6 +113,7 @@ for i in range(epoch):
     ax[2, i].imshow(ref_tgt)
 
 figure.savefig('../image/reference.jpg')
+plt.close(figure)
 
 
 # plot loss
