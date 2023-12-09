@@ -5,7 +5,9 @@ Vignette on constructing an Efficient Sub-Pixel Convolutional Neural Network in 
 
 ## Abstract
 a brief description in a few sentences of your vignette topic, example data, and outcomes.
-Our goal is to construct a model which that can reconstruct and de-blur images. The ESPCNN model, a type of ISR model, designed for image restoration, aiming to recover a high-resolution (HR) image from its corresponding low-resolution (LR) counterpart. Our dataset contains 4,739 images of wild animals, each with Each with dimensions of 3x512x512 (3 RGB color channel represents colored images instead of grey-scaled images, with 512x512 pixel length and width). Through training, our model should be able to de-blur images. 
+Our goal is to construct a model which that can reconstruct and de-blur images. The ESPCNN model, a type of ISR model, designed for image restoration, aiming to recover a high-resolution (HR) image from its corresponding low-resolution (LR) counterpart. Our dataset contains 4,739 images of wild animals, each with Each with dimensions of 3x512x512 (3 RGB color channel represents colored images instead of grey-scaled images, with 512x512 pixel length and width). We can find that the model performs well by comparing the input images and the final output images as shown below. ### insert images 
+
+Also, by the image of the visualization of the loss, we can find it has a trend of decreasing. ### insert loss image
 
 ## Repository Contents
 **Image Re-sizing** 
