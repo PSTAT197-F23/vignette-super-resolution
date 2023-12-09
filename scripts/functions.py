@@ -28,10 +28,11 @@ def swap(img):
     return img
 
 class DatasetFromFolder(Dataset):
-    def __init__(self, image_dir, scale_factor=4):
+    def __init__(self, image_dir, scale_factor):
         super(DatasetFromFolder, self).__init__()
         self.image_filenames = [join(image_dir, x) for x in listdir(image_dir) if is_image_file(x)]
         self.tensor = transforms.ToTensor()
+        self.scale_factor = scale_factor
 
     def __getitem__(self, index):
         input = load_img(self.image_filenames[index])
@@ -41,7 +42,7 @@ class DatasetFromFolder(Dataset):
         target = self.tensor(target)
         
         height, width = transforms.functional.get_image_size(input)
-        resize = transforms.Resize((int(height/scale_factor), int(width/scale_factor)), 
+        resize = transforms.Resize((int(height/self.scale_factor), int(width/self.scale_factor)), 
                                   transforms.InterpolationMode.BICUBIC, 
                                   antialias=True
                                  )
@@ -70,7 +71,7 @@ class Model(nn.Module):
         return x
 
 
-def train(epoch, model):
+def train(epoch, model, train_dataloader):
     epoch_loss = 0
     epoch_loss_history = []
     epoch_test_loss_history = []
