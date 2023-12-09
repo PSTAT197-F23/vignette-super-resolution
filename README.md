@@ -12,7 +12,7 @@ Also, by the image of the visualization of the loss, we can find it has a trend 
 ## Repository Contents
 **Image Re-sizing** 
 
-In order to launch our project effectively, we meticulously chose a substantial image dataset to thoroughly evaluate our model's performance by comparing the before and after images upon input. We pre-processed the images by resizing them into 3x128x128 images (found in main.py). 
+In order to launch our project effectively, we meticulously chose a substantial image dataset to thoroughly evaluate our model's performance by comparing the before and after images upon input. Our image dataset consists of around 4,000 low-resolution images of wild animals from Kaggle(https://www.kaggle.com/datasets/dimensi0n/afhq-512?select=wild), each with dimensions of 3x512x512 (3 RGB color channel represents colored images instead of grey-scaled images, with 512x512 pixel length and width). We then pre-processed the images by resizing them into 3x128x128 images (found in main.py). Lastly, we transform each of the images into tensor objects for easy input into our model in order to train our model effectively.
 
 **Loading Data**
 
