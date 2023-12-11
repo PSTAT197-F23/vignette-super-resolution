@@ -4,19 +4,18 @@ Vignette on constructing an Efficient Sub-Pixel Convolutional Neural Network in 
 **Contributors**: Jinran Jin, Yijiao Wang, Peng Zhao, Puyuan Zhang, Sichen Zhong
 
 ## Abstract
-<<<<<<< HEAD
-a brief description in a few sentences of your vignette topic, example data, and outcomes.
-Our goal is to construct a model which that can reconstruct and de-blur images. The ESPCNN model, a type of ISR model, designed for image restoration, aiming to recover a high-resolution (HR) image from its corresponding low-resolution (LR) counterpart. Our dataset contains 4,739 images of wild animals, each with Each with dimensions of 3x512x512 (3 RGB color channel represents colored images instead of grey-scaled images, with 512x512 pixel length and width). We can find that the model performs well by comparing the input images and the final output images as shown below.
+Our goal is to construct a model which that can reconstruct and de-blur images. The ESPCNN model, a type of ISR model, designed for image restoration, aiming to recover a high-resolution (HR) image from its corresponding low-resolution (LR) counterpart. Our image dataset consists of around 4,000 low-resolution images of wild animals from Kaggle(https://www.kaggle.com/datasets/dimensi0n/afhq-512?select=wild), each with Each with dimensions of 3x512x512 (3 RGB color channel represents colored images instead of grey-scaled images, with 512x512 pixel length and width). We can find that the model performs well by comparing the input images and the final output images as shown below:
 ![image text](https://github.com/PSTAT197-F23/vignette-super-resolution/blob/main/image/reference.jpg)
 
-Our goal is to construct a model which that can reconstruct and de-blur images. The ESPCNN model, a type of ISR model, designed for image restoration, aiming to recover a high-resolution (HR) image from its corresponding low-resolution (LR) counterpart. Our dataset contains 4,739 images of wild animals, each with Each with dimensions of 3x512x512 (3 RGB color channel represents colored images instead of grey-scaled images, with 512x512 pixel length and width). We can find that the model performs well by comparing the input images and the final output images as shown below. ### insert images 
+The second row of pictures shows our result. We could see the images become progressively clearer as the epochs increase. 
 
-Also, by the image of the visualization of the loss, we can find a decreasing trend. ### insert loss image
+Also, by visualizing the loss, we find that there is a decreasing trend, which means we have no signs of obvious overfitting at current satge.
+![image text](https://github.com/PSTAT197-F23/vignette-super-resolution/blob/main/image/loss.jpg)
 
 ## Repository Contents
 **Image Re-sizing** 
 
-In order to launch our project effectively, we meticulously chose a substantial image dataset to thoroughly evaluate our model's performance by comparing the before and after images upon input. Our image dataset consists of around 4,000 low-resolution images of wild animals from Kaggle(https://www.kaggle.com/datasets/dimensi0n/afhq-512?select=wild), each with dimensions of 3x512x512 (3 RGB color channel represents colored images instead of grey-scaled images, with 512x512 pixel length and width). We then pre-processed the images by resizing them into 3x128x128 images (found in main.py). Lastly, we transform each of the images into tensor objects for easy input into our model in order to train our model effectively.
+In order to launch our project effectively, we meticulously chose a substantial image dataset to thoroughly evaluate our model's performance by comparing the before and after images upon input. Our image dataset consists of around 4,000 low-resolution images  each with dimensions of 3x512x512. We then pre-processed the images by resizing them into 3x128x128 images (found in main.py). Lastly, we transform each of the images into tensor objects for easy input into our model in order to train our model effectively.
 
 **Loading Data**
 
