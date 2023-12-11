@@ -18,8 +18,10 @@ Our objective for the final project is to generate a high-resolution image from 
 │  └─val
 │     └─[testing data]
 ├─image
-│  ├─loss.jpg
-│  └─reference.jpg
+│   ├─loss.jpg
+│   ├─model_explanation.png
+│   └─reference.jpg
+|
 ├─model
 │  └─model.pt
 ├─scripts
@@ -43,4 +45,6 @@ A survey of image super resolution models: https://arxiv.org/pdf/1904.07523.pdf
 Pytorch implementations of the paper:
  - https://github.com/pytorch/examples/tree/main/super_resolution
  - https://github.com/Lornatang/ESPCN-PyTorch
+
+Dataset: https://www.kaggle.com/datasets/dimensi0n/afhq-512?select=wild
 
