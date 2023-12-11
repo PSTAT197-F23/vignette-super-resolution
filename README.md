@@ -4,13 +4,8 @@ Vignette on constructing an Efficient Sub-Pixel Convolutional Neural Network in 
 **Contributors**: Jinran Jin, Yijiao Wang, Peng Zhao, Puyuan Zhang, Sichen Zhong
 
 ## Abstract
-Our goal is to construct a model which that can reconstruct and de-blur images. The ESPCNN model, a type of ISR model, designed for image restoration, aiming to recover a high-resolution (HR) image from its corresponding low-resolution (LR) counterpart. Our image dataset consists of around 4,000 low-resolution images of wild animals from Kaggle(https://www.kaggle.com/datasets/dimensi0n/afhq-512?select=wild), each with Each with dimensions of 3x512x512 (3 RGB color channel represents colored images instead of grey-scaled images, with 512x512 pixel length and width). We can find that the model performs well by comparing the input images and the final output images as shown below:
-![image text](https://github.com/PSTAT197-F23/vignette-super-resolution/blob/main/image/reference.jpg)
 
-The second row of pictures shows our result. We could see the images become progressively clearer as the epochs increase. 
-
-Also, by visualizing the loss, we find that there is a decreasing trend, which means we have no signs of obvious overfitting at current satge.
-![image text](https://github.com/PSTAT197-F23/vignette-super-resolution/blob/main/image/loss.jpg)
+Our objective for the final project is to reconstruct a high-resolution (HR) image from its corresponding low-resolution (LR) counterpart. To accomplish this, we selected the ESPCNN model, known for its effectiveness in image restoration tasks. Our dataset was from Kaggle, containing aroud 4000 images of wild animals. The training process involves obtaining and preprocessing a suitable dataset, followed by training the ESPCNN model using the prepared data.
 
 ## Repository Contents
 **Image Re-sizing** 
