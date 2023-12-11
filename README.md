@@ -5,29 +5,42 @@ Vignette on constructing an Efficient Sub-Pixel Convolutional Neural Network in 
 
 ## Abstract
 
-Our objective for the final project is to reconstruct a high-resolution (HR) image from its corresponding low-resolution (LR) counterpart. To accomplish this, we selected the ESPCNN model, known for its effectiveness in image restoration tasks. Our dataset was from Kaggle, containing aroud 4000 images of wild animals. The training process involves obtaining and preprocessing a suitable dataset, followed by training the ESPCNN model using the prepared data.
+Our objective for the final project is to generate a high-resolution image from the original low-resolution image. To accomplish this, we selected the Efficient Sub-Pixel Convolutional Neural Network model, efficient as it reduces the network size by upsampling the image at the very last step. Our dataset from Kaggle contains aroud 4000 high resolution images of wild animal faces. Our Pytorch implementation mainly includes preprocessing the dataset, defining the ESPCNN model, and visualizing the training process.
 
 ## Repository Contents
-**Image Re-sizing** 
 
-In order to launch our project effectively, we meticulously chose a substantial image dataset to thoroughly evaluate our model's performance by comparing the before and after images upon input. Our image dataset consists of around 4,000 low-resolution images  each with dimensions of 3x512x512. We then pre-processed the images by resizing them into 3x128x128 images (found in main.py). Lastly, we transform each of the images into tensor objects for easy input into our model in order to train our model effectively.
+```
+├─data
+│  ├─loss
+│  │  └─[reference image]
+│  ├─train
+│  │  └─[training data]
+│  └─val
+│     └─[testing data]
+├─image
+│  ├─loss.jpg
+│  └─reference.jpg
+├─model
+│  └─model.pt
+├─scripts
+│  ├─dataset.py
+│  ├─main.py
+│  ├─model.py
+│  └─drafts
+└─vignette-super-resolution.ipynb
+```
 
-**Loading Data**
+The detailed report is in the notebook `vignette-super-resolution.ipynb`.
 
-Following preprocessing, we load the data into tensor objects and proceed to extract both training and testing datasets from these objects.
+To reproduce the result (change model architecture, change hyperparameters, use your image as reference, etc), update `model.py`, `main.py`, or `loss` folder as needed, and then simply run `main.py`. The generated high resolution reference image at the end of each epoch and the loss history will be saved in the `image` folder.
 
-**Model**
-
-Our model is a convolutional neural network (CNN) designed for image super-resolution. It consists of three convolutional layers (conv1, conv2, conv3) followed by a pixel shuffle operation (PixelShuffle). The model takes a low-resolution image (x) as input and outputs a high-resolution image. The convolutional layers learn hierarchical features, and the pixel shuffle operation is used for upscaling. The ReLU activation is applied after each convolutional layer, and the final output is clamped to ensure pixel values are within the valid range [0, 1]. The scale factor is a hyperparameter that controls the level of upscaling.
 
 ## References
 The original ESPCN paper: https://arxiv.org/pdf/1609.05158.pdf
 
-Another amazing ESPCN paper: https://arxiv.org/pdf/1904.07523.pdf
+A survey of image super resolution models: https://arxiv.org/pdf/1904.07523.pdf
 
 Pytorch implementations of the paper:
  - https://github.com/pytorch/examples/tree/main/super_resolution
  - https://github.com/Lornatang/ESPCN-PyTorch
 
-## Re-evaluation
-instructions on use and instructions on contributing to the repository
