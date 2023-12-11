@@ -21,7 +21,6 @@ Our objective for the final project is to generate a high-resolution image from 
 │   ├─loss.jpg
 │   ├─model_explanation.png
 │   └─reference.jpg
-|
 ├─model
 │  └─model.pt
 ├─scripts
