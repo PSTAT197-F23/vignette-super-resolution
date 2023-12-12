@@ -18,9 +18,9 @@ Our objective for the final project is to generate a high-resolution image from 
 │  └─val
 │     └─[testing data]
 ├─image
-│   ├─loss.jpg
-│   ├─model_explanation.png
-│   └─reference.jpg
+│  ├─loss.jpg
+│  ├─model_explanation.png
+│  └─reference.jpg
 ├─model
 │  └─model.pt
 ├─scripts
