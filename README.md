@@ -5,7 +5,7 @@ Vignette on constructing an Efficient Sub-Pixel Convolutional Neural Network in 
 
 ## Abstract
 
-Our objective for the final project is to generate a high-resolution image from the original low-resolution image. To accomplish this, we selected the Efficient Sub-Pixel Convolutional Neural Network model, efficient as it reduces the network size by upsampling the image at the very last step. Our dataset from Kaggle contains aroud 4000 high resolution images of wild animal faces. Our Pytorch implementation mainly includes preprocessing the dataset, defining the ESPCN model, and visualizing the training process.
+Our objective for the final project is to generate a high-resolution image from the original low-resolution image. To accomplish this, we selected the Efficient Sub-Pixel Convolutional Neural Network model, efficient as it reduces the network size by upsampling the image at the very last step. Our dataset from Kaggle contains around 4000 high resolution images of wild animal faces. Our Pytorch implementation mainly includes preprocessing the dataset, defining the ESPCN model, and visualizing the training process.
 
 ## Repository Contents
 
